@@ -4072,6 +4072,7 @@ button {
     top: 100px;
     right: -100%;
     z-index: 996;
+    padding-bottom: 150px !important;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
   }

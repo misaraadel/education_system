@@ -44,6 +44,7 @@ $(document).ready(function () {
         $('.toggler').click(function(){
             $('.toggler').toggleClass('active');
             $('.side-nav').toggleClass('acitve-nav');
+            $('body').toggleClass('overflowNone');
         });
     }
 
