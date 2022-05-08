@@ -1,0 +1,137 @@
+@import 'global';
+@import 'animations';
+
+/*start login pages*/
+@import 'login';
+
+/*start navbar and sidenav*/
+@import 'navbar';
+
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 130px;
+  padding-bottom: 40px;
+  padding-inline-start: 280px;
+  background-color: #f6f6f6;
+
+  &.active-main {
+    padding-inline-start: 100px !important;
+  }
+
+  .heading {
+    width: 100%;
+    margin-block-end: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    .head-contain {
+      .page-title {
+        font-size: 22px;
+        font-weight: 900;
+        color: #000;
+        margin-bottom: 10px;
+
+        span {
+          color: #D5B98B;
+          font-size: 22px;
+          font-weight: 900;
+          margin-inline-start: 10px;
+        }
+      }
+
+      .page-desc {
+        font-size: 16px;
+        font-weight: 500;
+        color: #919191;
+        margin: 0px;
+      }
+    }
+
+    .buttons-contain {
+      display: flex;
+      align-items: center;
+      align-content: center;
+
+      .add-data {
+        width: 149px;
+        height: 47px;
+        border: 1px solid #005D63;
+        background-color: #005D63;
+        border-radius: 100px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 4;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 100%;
+          background-color: #D5B98B;
+          top: 0;
+          left: 0;
+          transition: all .2s linear;
+          z-index: -1;
+        }
+
+        &:hover {
+          color: #005D63;
+          border: 0px !important;
+
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+
+      .circle-btn {
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        img {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+        }
+
+        &.white {
+          background-color: #fff;
+          border: 1px solid #E5E5E5;
+          margin: 0px 10px;
+        }
+
+        &.gold {
+          background-color: #D5B98B;
+          border: 1px solid #D5B98B;
+        }
+
+        &:hover {
+          img {
+            animation: fadeInUp .3s linear;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*parts page*/
+@import 'parts';
+
+@import 'media';

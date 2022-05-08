@@ -1,0 +1,132 @@
+@media (max-width: 999px) {
+  .login .form-contain, .modal-body.part-modal-body {
+    padding: 50px 20px;
+  }
+
+  .navbar {
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    
+    .content {
+      .logo-contain, .search-icon {
+        display: flex !important;
+      }
+
+      .name, .form-contain, .nav-item.dropdown .dropdown-toggle::after , .nav-item.dropdown .drop-contain {
+        display: none;
+      }
+
+      .user-data .nav-item.dropdown .dropdown-toggle {
+        padding: 0px !important;
+
+        img {
+          margin-inline-end: 0px !important;
+        }
+      }
+    }
+  }
+
+  .side-nav {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    z-index: 996;
+    transition: all .3s linear;
+
+    &::after {
+      opacity: .5;
+    }
+
+    .logo-contain {
+      display: none !important;
+    }
+
+    .name {
+      display: block !important;
+    }
+
+    .navbar-nav .nav-item {
+      .nav-link {
+        justify-content: flex-start !important;
+
+        span {
+          display: block !important;
+        }
+
+        &::before {
+          display: block !important;
+        }  
+      }
+    }
+
+    &.acitve-nav {
+      width: 100% !important;
+      right: 0px !important;
+
+      .navbar-nav .nav-item {
+        .nav-link {
+          justify-content: flex-start !important;
+  
+          span {
+            display: block !important;
+          }
+
+          &::before {
+            display: block !important;
+          } 
+        }
+      }
+    }
+  }
+
+  .main-content, &.active-main {
+    padding: 120px 0px 40px !important;
+  }
+
+  .main-content {
+    .heading {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      align-content: flex-start !important;
+      justify-content: flex-start !important;
+
+      .head-contain {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .filter-modal .filter-contain {
+    width: 100% !important;
+    padding: 30px 16px !important;
+  }
+
+  .modal-body.part-modal-body {
+    .data-branch-manager {
+      li {
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        align-content: flex-start !important;
+        .data {
+          width: 100% !important;
+        }
+
+        .desc {
+          width: 100%;
+          margin-top: 14px !important;
+          text-align: start !important;
+        }
+      }
+    }
+  }
+
+  .manager-modal {
+    min-width: 100% !important;
+  }
+  
+}
