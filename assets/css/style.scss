@@ -72,6 +72,12 @@
         overflow: hidden;
         z-index: 4;
 
+        &.border-btn {
+          background-color: #fff !important;
+          color: #005D63;
+          margin-inline-start: 10px;
+        }
+
         &::after {
           content: '';
           position: absolute;
@@ -131,7 +137,15 @@
   }
 }
 
+.modal-content {
+  border-radius: 10px !important;
+  border: 0px !important;
+}
+
 /*parts page*/
 @import 'parts';
+
+/*home page*/
+@import 'home';
 
 @import 'media';

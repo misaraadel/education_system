@@ -130,4 +130,9 @@
     min-width: 100% !important;
   }
   
+  .parts-box {
+    .form-contain {
+      padding-inline-end: 0px !important;
+    }
+  }
 }
