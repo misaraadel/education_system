@@ -3377,16 +3377,13 @@ button {
   width: fit-content;
   padding: 0px !important;
   border: 0px !important;
-}
-
-.parts-box .nav .nav-item:first-child {
-  -webkit-padding-end: 43px !important;
-          padding-inline-end: 43px !important;
+  -webkit-padding-end: 80px !important;
+          padding-inline-end: 80px !important;
 }
 
 .parts-box .nav .nav-item:last-child {
-  -webkit-padding-start: 43px !important;
-          padding-inline-start: 43px !important;
+  -webkit-padding-end: 0px !important;
+          padding-inline-end: 0px !important;
 }
 
 .parts-box .nav .nav-item .nav-link {
@@ -3451,6 +3448,103 @@ button {
 .parts-box .nav .nav-item .nav-link.active::after, .parts-box .nav .nav-item .nav-link:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.parts-box .buttons-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-bottom: 50px;
+}
+
+.parts-box .buttons-selected::-webkit-scrollbar, .parts-box .buttons-selected::-webkit-scrollbar-track, .parts-box .buttons-selected::-webkit-scrollbar-thumb, .parts-box .buttons-selected::-webkit-scrollbar-thumb:hover {
+  background: transparent !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+
+.parts-box .buttons-selected li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  min-width: 150px;
+}
+
+.parts-box .buttons-selected li a {
+  width: 150px;
+  height: 47px;
+  background-color: #E5E5E5;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #909090;
+}
+
+.parts-box .buttons-selected li a:hover, .parts-box .buttons-selected li a.active {
+  background-color: #005D63;
+  color: #fff;
+}
+
+.parts-box .remove-bnt {
+  width: 150px;
+  height: 47px;
+  background-color: #F83636;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 27px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parts-box .remove-bnt img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.parts-box .remove-bnt span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.parts-box .remove-bnt:hover img {
+  -webkit-animation: tada .4s linear both;
+          animation: tada .4s linear both;
 }
 
 .parts-box .form-contain {
@@ -3600,6 +3694,68 @@ button {
   background-color: rgba(0, 93, 99, 0.06);
 }
 
+.parts-box .form-contain .file-upload {
+  width: 224px;
+  height: 150px;
+}
+
+.parts-box .form-contain .file-upload input[type="file"] {
+  display: none;
+}
+
+.parts-box .form-contain .file-upload .file-upload-section {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  background: rgba(213, 185, 139, 0.1);
+  border: 1px solid rgba(0, 93, 99, 0.1);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.parts-box .form-contain .file-upload .file-upload-section img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.parts-box .form-contain .file-upload .file-upload-section h2 {
+  color: #909090;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 15px 0px;
+}
+
+.parts-box .form-contain .file-upload .file-upload-section p {
+  color: #D5B98B;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.parts-box .form-contain .file-upload .file-upload-section:hover img {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 .parts-box .form-contain .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3738,6 +3894,10 @@ button {
 .numbers li:last-child {
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
+}
+
+.school-modal .modal-body.part-modal-body {
+  padding: 40px 83px !important;
 }
 
 .modal-body.part-modal-body {
@@ -4043,6 +4203,20 @@ button {
   margin: 36px 0px 44px;
 }
 
+.modal-body.part-modal-body .nav.requset-nav {
+  padding: 30px 0px 0px 0px;
+  border-top: 1px solid #E5E5E5;
+  margin: 0px 0px 40px 0px !important;
+}
+
+.modal-body.part-modal-body .nav.requset-nav .nav-item {
+  width: 25%;
+}
+
+.modal-body.part-modal-body .nav.requset-nav .nav-item .nav-link {
+  padding-bottom: 30px !important;
+}
+
 .modal-body.part-modal-body .nav .nav-item {
   width: 50%;
   padding: 0px !important;
@@ -4073,7 +4247,7 @@ button {
   content: '';
   position: absolute;
   width: 50px;
-  height: 1px;
+  height: 2px;
   background-color: #D5B98B;
   bottom: 0px;
   left: calc(50% - 25px);
@@ -4124,6 +4298,10 @@ button {
           transform: scaleX(1);
 }
 
+.modal-body.part-modal-body .owl-carousel .owl-stage-outer {
+  padding-bottom: 30px;
+}
+
 .modal-body.part-modal-body .heading-modal {
   width: 100%;
   border-bottom: 1px solid rgba(0, 93, 99, 0.1);
@@ -4141,10 +4319,63 @@ button {
           justify-content: space-between;
 }
 
+.modal-body.part-modal-body .heading-modal.school-name {
+  border: 0px !important;
+  padding: 0px !important;
+  margin-bottom: 20px !important;
+}
+
 .modal-body.part-modal-body .heading-modal h1 {
-  width: calc(100% - 40px);
+  width: 100%;
   text-align: center;
   margin: 0px !important;
+}
+
+.modal-body.part-modal-body .heading-modal .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.modal-body.part-modal-body .heading-modal .content img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-body.part-modal-body .heading-modal .content h2 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+.modal-body.part-modal-body .heading-modal .content .name {
+  padding: 11px 21px;
+  background-color: #D5B98B;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .modal-body.part-modal-body .heading-modal .close-modal img {
@@ -4154,6 +4385,9 @@ button {
      object-fit: contain;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
+  position: absolute;
+  top: 40px;
+  left: 80px;
 }
 
 .modal-body.part-modal-body .heading-modal .close-modal img:hover {
@@ -4224,12 +4458,107 @@ button {
   text-align: end !important;
 }
 
+.modal-body.part-modal-body .container.owl-nav {
+  position: absolute;
+  top: calc(50% - 30px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 999;
+  margin: 0px;
+}
+
+.modal-body.part-modal-body .container.owl-nav.purpble-color button {
+  background-color: #D5B98B;
+  border: 1px solid #D5B98B !important;
+}
+
+.modal-body.part-modal-body .container.owl-nav.purpble-color button i {
+  color: #005D63;
+}
+
+.modal-body.part-modal-body .container.owl-nav.purpble-color button:hover {
+  background-color: #005D63 !important;
+}
+
+.modal-body.part-modal-body .container.owl-nav.purpble-color button:hover i {
+  color: #D5B98B;
+}
+
+.modal-body.part-modal-body .container.owl-nav.golden-color button {
+  background-color: #D5B98B;
+  border: 1px solid #D5B98B !important;
+}
+
+.modal-body.part-modal-body .container.owl-nav.golden-color button i {
+  color: #005D63;
+}
+
+.modal-body.part-modal-body .container.owl-nav.golden-color button:hover {
+  background-color: #005D63 !important;
+}
+
+.modal-body.part-modal-body .container.owl-nav.golden-color button:hover i {
+  color: #D5B98B;
+}
+
+.modal-body.part-modal-body .container.owl-nav button {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+  margin: 0px !important;
+  border-radius: 50% !important;
+  position: absolute;
+}
+
+.modal-body.part-modal-body .container.owl-nav button i {
+  font-size: 20px;
+}
+
+.modal-body.part-modal-body .container.owl-nav button.owl-next {
+  left: -60px;
+}
+
+.modal-body.part-modal-body .container.owl-nav button.owl-prev {
+  right: -60px;
+}
+
+.modal-body.part-modal-body .container.owl-nav button:hover i {
+  -webkit-animation: tada 1s both;
+          animation: tada 1s both;
+  color: #fff;
+}
+
+.modal-body.part-modal-body .item {
+  padding: 32px 20px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 93, 99, 0.1);
+  border-radius: 10px;
+}
+
+.modal-body.part-modal-body .item .data-branch-manager {
+  margin: 0px !important;
+}
+
 .modal {
   overflow-y: scroll !important;
 }
 
 .manager-modal {
   min-width: 774px !important;
+}
+
+.school-modal {
+  min-width: 972px !important;
 }
 
 .filter-modal {
@@ -4608,8 +4937,8 @@ button {
 }
 
 @media (max-width: 999px) {
-  .login .form-contain, .modal-body.part-modal-body {
-    padding: 50px 20px;
+  .login .form-contain, .modal-body.part-modal-body, .school-modal .modal-body.part-modal-body {
+    padding: 50px 20px !important;
   }
   .navbar {
     width: 100% !important;
@@ -4724,12 +5053,52 @@ button {
     margin-top: 14px !important;
     text-align: start !important;
   }
-  .manager-modal {
+  .modal-body.part-modal-body .item {
+    padding: 20px 10px !important;
+  }
+  .manager-modal, .school-modal {
     min-width: 100% !important;
   }
   .parts-box .form-contain {
     -webkit-padding-end: 0px !important;
             padding-inline-end: 0px !important;
+  }
+  .modal-body.part-modal-body .heading-modal .close-modal img {
+    top: 20px;
+    left: 20px;
+  }
+  .modal-body.part-modal-body .nav.requset-nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .modal-body.part-modal-body .nav.requset-nav::-webkit-scrollbar, .modal-body.part-modal-body .nav.requset-nav::-webkit-scrollbar-track, .modal-body.part-modal-body .nav.requset-nav::-webkit-scrollbar-thumb, .modal-body.part-modal-body .nav.requset-nav::-webkit-scrollbar-thumb:hover {
+    background: transparent !important;
+    width: 0px !important;
+    height: 0px !important;
+  }
+  .modal-body.part-modal-body .nav.requset-nav .nav-item {
+    min-width: 200px !important;
+    text-align: center;
+  }
+  .modal-body.part-modal-body .container.owl-nav {
+    bottom: 50px !important;
+    -webkit-transform: translate(0px) !important;
+            transform: translate(0px) !important;
+    top: unset !important;
+  }
+  .modal-body.part-modal-body .container.owl-nav button.owl-prev {
+    right: calc(50% - 60px) !important;
+  }
+  .modal-body.part-modal-body .container.owl-nav button.owl-next {
+    left: calc(50% - 60px) !important;
+  }
+  .owl-carousel .owl-stage-outer {
+    padding-bottom: 60px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

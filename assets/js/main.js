@@ -72,4 +72,30 @@ $(document).ready(function () {
             $(this).addClass( "fa-eye" );
         }
     });
+
+    $('.owl-header').owlCarousel({
+        rtl: true,
+        loop:true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        autoplay: false,
+        touchDrag  :false,
+		mouseDrag  : false,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 2000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+		navContainerClass: "container purpble-color owl-nav",
+		navText: [
+            '<i class="fas fa-chevron-right"></i>',
+            '<i class="fas fa-chevron-left"></i>'
+        ],
+        items:1
+    });
 });

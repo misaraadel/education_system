@@ -1,6 +1,6 @@
 @media (max-width: 999px) {
-  .login .form-contain, .modal-body.part-modal-body {
-    padding: 50px 20px;
+  .login .form-contain, .modal-body.part-modal-body, .school-modal .modal-body.part-modal-body {
+    padding: 50px 20px !important;
   }
 
   .navbar {
@@ -124,15 +124,62 @@
         }
       }
     }
+
+    .item {
+      padding: 20px 10px !important;
+    }
   }
 
-  .manager-modal {
+  .manager-modal, .school-modal {
     min-width: 100% !important;
+
+    
   }
   
   .parts-box {
     .form-contain {
       padding-inline-end: 0px !important;
     }
+  }
+
+  .modal-body.part-modal-body .heading-modal .close-modal img {
+    top: 20px;
+    left: 20px;
+  }
+
+  .modal-body.part-modal-body .nav.requset-nav {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: flex-start !important;
+
+    &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb, &::-webkit-scrollbar-thumb:hover {
+      background: transparent !important;
+      width: 0px !important;
+      height: 0px !important;
+    }
+
+    .nav-item {
+      min-width: 200px !important;
+      text-align: center;
+    }
+  }
+
+  .modal-body.part-modal-body .container.owl-nav {
+    bottom: 50px !important;
+    transform: translate(0px) !important;
+    top: unset !important;
+
+    button.owl-prev {
+      right: calc(50% - 60px) !important;
+    }
+
+    button.owl-next {
+      left: calc(50% - 60px) !important;
+    }
+  }
+
+  .owl-carousel .owl-stage-outer {
+    padding-bottom: 60px !important;
   }
 }

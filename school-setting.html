@@ -326,7 +326,7 @@
           </div>
 
           <div class="buttons-contain">
-            <a href="add-school-category.html" class="add-data">
+            <a href="add-school-setting.html" class="add-data">
               جهة جديدة
             </a>
 
@@ -350,7 +350,7 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#ManagerDetailsModal">
                       <img src="assets/images/parts/info-circle.svg" alt="">
 
                       <span>
@@ -358,7 +358,7 @@
                       </span>
                     </a>
 
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="edit-school-setting.html">
                       <img src="assets/images/parts/edit.svg" alt="">
 
                       <span>
@@ -402,7 +402,7 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#ManagerDetailsModal">
                       <img src="assets/images/parts/info-circle.svg" alt="">
 
                       <span>
@@ -410,7 +410,7 @@
                       </span>
                     </a>
 
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="edit-school-setting.html">
                       <img src="assets/images/parts/edit.svg" alt="">
 
                       <span>
@@ -454,7 +454,7 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="edit-school-category.html">
+                     <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#ManagerDetailsModal">
                       <img src="assets/images/parts/info-circle.svg" alt="">
 
                       <span>
@@ -462,7 +462,7 @@
                       </span>
                     </a>
 
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="edit-school-setting.html">
                       <img src="assets/images/parts/edit.svg" alt="">
 
                       <span>
@@ -506,7 +506,7 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="edit-school-category.html">
+                     <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#ManagerDetailsModal">
                       <img src="assets/images/parts/info-circle.svg" alt="">
 
                       <span>
@@ -514,7 +514,7 @@
                       </span>
                     </a>
 
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="edit-school-setting.html">
                       <img src="assets/images/parts/edit.svg" alt="">
 
                       <span>
@@ -558,7 +558,7 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="edit-school-category.html">
+                     <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#ManagerDetailsModal">
                       <img src="assets/images/parts/info-circle.svg" alt="">
 
                       <span>
@@ -566,7 +566,7 @@
                       </span>
                     </a>
 
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="edit-school-setting.html">
                       <img src="assets/images/parts/edit.svg" alt="">
 
                       <span>
@@ -610,7 +610,7 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="edit-school-category.html">
+                     <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#ManagerDetailsModal">
                       <img src="assets/images/parts/info-circle.svg" alt="">
 
                       <span>
@@ -618,7 +618,7 @@
                       </span>
                     </a>
 
-                    <a class="dropdown-item" href="edit-school-category.html">
+                    <a class="dropdown-item" href="edit-school-setting.html">
                       <img src="assets/images/parts/edit.svg" alt="">
 
                       <span>
@@ -692,149 +692,851 @@
 
     <!--branche manager details-->
     <div class="modal fade" id="ManagerDetailsModal" tabindex="-1" aria-labelledby="ManagerDetailsModalLabel" aria-hidden="true">
-      <div class="modal-dialog manager-modal modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered school-modal">
         <div class="modal-content">
           <div class="modal-body part-modal-body">
-            <div class="heading-modal">
-              <h1>
-                مازن محمود
-              </h1>
+            <div class="heading-modal school-name align-items-start align-content-start">
+              <div class="content">
+                <img src="assets/images/parts/school_logo.png" alt="">
+
+                <h2>
+                  مدرسة أم القرى
+                </h2>
+
+                <div class="name">
+                  مدارس
+                </div>
+              </div>
 
               <a href="#" class="close-modal" data-dismiss="modal">
                 <img src="assets/images/parts/close_circle.svg" alt="">
               </a>
             </div>
 
-            <ul class="data-branch-manager">
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/profile-circle-blue.svg" alt="">
-
-                  <span class="title">
-                    اسم المستخدم
-                  </span>
-                </div>
-
-                <p class="desc">
-                  Mazen
-                </p>
+            <ul class="nav requset-nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="request-tab" data-toggle="tab" href="#request" role="tab" aria-controls="request" aria-selected="true">
+                  معلومات مقدمي الطلب
+                </a>
               </li>
 
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/edit_square.svg" alt="">
-
-                  <span class="title">
-                    النوع
-                  </span>
-                </div>
-
-                <p class="desc">
-                  ذكر
-                </p>
+              <li class="nav-item">
+                <a class="nav-link" id="loaction-tab" data-toggle="tab" href="#loaction" role="tab" aria-controls="loaction" aria-selected="false">
+                  معلومات الموقع
+                </a>
               </li>
 
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/flag.svg" alt="">
-
-                  <span class="title">
-                    الجنسية
-                  </span>
-                </div>
-
-                <p class="desc">
-                  السعودية
-                </p>
+              <li class="nav-item">
+                <a class="nav-link" id="data-tab" data-toggle="tab" href="#data" role="tab" aria-controls="data" aria-selected="false">
+                  معلومات اللجنة الإشرافية
+                </a>
               </li>
-
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/history.svg" alt="">
-
-                  <span class="title">
-                    تاريخ الميلاد
-                  </span>
-                </div>
-
-                <p class="desc">
-                  24 مارس 1994 م
-                </p>
-              </li>
-
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/card-edit.svg" alt="">
-
-                  <span class="title">
-                    رقم الهوية
-                  </span>
-                </div>
-
-                <p class="desc">
-                  298457454211
-                </p>
-              </li>
-
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/hashtag-up-blue.svg" alt="">
-
-                  <span class="title">
-                    المرحلة الدراسية
-                  </span>
-                </div>
-
-                <p class="desc">
-                  البكالريوس
-                </p>
-              </li>
-
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/sms-blue.svg" alt="">
-
-                  <span class="title">
-                    البريد الإلكتروني
-                  </span>
-                </div>
-
-                <p class="desc">
-                  Info@gmail.com
-                </p>
-              </li>
-
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/mobile-blue.svg" alt="">
-
-                  <span class="title">
-                    رقم الهاتف
-                  </span>
-                </div>
-
-                <p class="desc">
-                  +96646464158
-                </p>
-              </li>
-
-              <li>
-                <div class="data">
-                  <img src="assets/images/parts/route-square.svg" alt="">
-
-                  <span class="title">
-                    العنوان
-                  </span>
-                </div>
-
-                <p class="desc">
-                  الرياض , حي الروضة
-                </p>
+              
+              <li class="nav-item">
+                <a class="nav-link" id="team-tab" data-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="false">
+                  معلومات الطاقم الإداري
+                </a>
               </li>
             </ul>
 
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="request" role="tabpanel" aria-labelledby="request-tab">
+                <div class="owl-carousel owl-theme owl-header">
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/card-edit.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهوية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          298457454211
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/mobile-blue.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهاتف
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          +96646464158
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/sms-blue.svg" alt="">
+        
+                          <span class="title">
+                            البريد الإلكتروني
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          Info@gmail.com
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/building.svg" alt="">
+        
+                          <span class="title">
+                            جهة العمل
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          جمعية تحفيظ القران الكريم
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/card-edit.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهوية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          298457454211
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/mobile-blue.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهاتف
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          +96646464158
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/sms-blue.svg" alt="">
+        
+                          <span class="title">
+                            البريد الإلكتروني
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          Info@gmail.com
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/building.svg" alt="">
+        
+                          <span class="title">
+                            جهة العمل
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          جمعية تحفيظ القران الكريم
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/card-edit.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهوية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          298457454211
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/mobile-blue.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهاتف
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          +96646464158
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/sms-blue.svg" alt="">
+        
+                          <span class="title">
+                            البريد الإلكتروني
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          Info@gmail.com
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/building.svg" alt="">
+        
+                          <span class="title">
+                            جهة العمل
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          جمعية تحفيظ القران الكريم
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="loaction" role="tabpanel" aria-labelledby="loaction-tab">
+                <ul class="data-branch-manager">
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/location_blue.svg" alt="">
+    
+                      <span class="title">
+                        المدينة
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      الرياض
+                    </p>
+                  </li>
+    
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/flag.svg" alt="">
+    
+                      <span class="title">
+                        الحي
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      الروضة
+                    </p>
+                  </li>
+    
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/map.svg" alt="">
+    
+                      <span class="title">
+                        المكان
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      مستأجر
+                    </p>
+                  </li>
+    
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/pharagraphspacing.svg" alt="">
+    
+                      <span class="title">
+                        المساحة
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      1250 م2
+                    </p>
+                  </li>
+    
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/classes.svg" alt="">
+    
+                      <span class="title">
+                        عدد الفصول
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      14
+                    </p>
+                  </li>
+    
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/room.svg" alt="">
+    
+                      <span class="title">
+                        عدد غرف الإدارة
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      4
+                    </p>
+                  </li>
+    
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/halls.svg" alt="">
+    
+                      <span class="title">
+                        عدد قاعات المؤتمرات
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      4
+                    </p>
+                  </li>
+    
+                  <li>
+                    <div class="data">
+                      <img src="assets/images/parts/routing.svg" alt="">
+    
+                      <span class="title">
+                        الموقع الجغرافي
+                      </span>
+                    </div>
+    
+                    <p class="desc">
+                      الرياض , حي الروضة , شارع الإمام أحمد بن حنبل
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-pane fade" id="data" role="tabpanel" aria-labelledby="data-tab">
+                <div class="owl-carousel owl-theme owl-header">
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/card-edit.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهوية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          298457454211
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/mobile-blue.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهاتف
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          +96646464158
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/sms-blue.svg" alt="">
+        
+                          <span class="title">
+                            البريد الإلكتروني
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          Info@gmail.com
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/building.svg" alt="">
+        
+                          <span class="title">
+                            جهة العمل
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          جمعية تحفيظ القران الكريم
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/card-edit.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهوية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          298457454211
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/mobile-blue.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهاتف
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          +96646464158
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/sms-blue.svg" alt="">
+        
+                          <span class="title">
+                            البريد الإلكتروني
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          Info@gmail.com
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/building.svg" alt="">
+        
+                          <span class="title">
+                            جهة العمل
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          جمعية تحفيظ القران الكريم
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/card-edit.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهوية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          298457454211
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/mobile-blue.svg" alt="">
+        
+                          <span class="title">
+                            رقم الهاتف
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          +96646464158
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/sms-blue.svg" alt="">
+        
+                          <span class="title">
+                            البريد الإلكتروني
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          Info@gmail.com
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/building.svg" alt="">
+        
+                          <span class="title">
+                            جهة العمل
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          جمعية تحفيظ القران الكريم
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+                <div class="owl-carousel owl-theme owl-header">
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/user-edit.svg" alt="">
+        
+                          <span class="title">
+                            الصفة
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          رئيس مجلس الإدارة
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/user-edit.svg" alt="">
+        
+                          <span class="title">
+                            الصفة
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          رئيس مجلس الإدارة
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="item">
+                    <ul class="data-branch-manager">
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/profile-circle-blue.svg" alt="">
+        
+                          <span class="title">
+                            الإسم
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          كريم طارق
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/user-edit.svg" alt="">
+        
+                          <span class="title">
+                            الصفة
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          رئيس مجلس الإدارة
+                        </p>
+                      </li>
+        
+                      <li>
+                        <div class="data">
+                          <img src="assets/images/parts/flag.svg" alt="">
+        
+                          <span class="title">
+                            الجنسية
+                          </span>
+                        </div>
+        
+                        <p class="desc">
+                          السعودية
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="buttons-contain">
-              <a href="edit-school-category.html" class="modal-btn blue-bk">
+              <a href="edit-school-setting.html" class="modal-btn blue-bk">
                 تعديل
               </a>
 
@@ -855,11 +1557,11 @@
         <div class="heading">
           <div class="head-contain">
             <h1 class="page-title">
-              فرز التصنيفات
+              فرز المدارس والمعاهد
             </h1>
 
             <p class="page-desc">
-              فرز وتصفية تصنيفات المدارس والمعاهد
+              فرز وتصفية كل المدارس والمعاهد
             </p>
           </div>
 
