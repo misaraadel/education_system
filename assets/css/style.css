@@ -4936,6 +4936,115 @@ button {
           animation: storm .4s linear both;
 }
 
+/*not found*/
+.not-found {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #fff;
+}
+
+.not-found .content {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 93, 99, 0.03);
+          box-shadow: 0px 0px 10px rgba(0, 93, 99, 0.03);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.not-found .content img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.not-found .content h1 {
+  color: #005D63;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+.not-found .content p {
+  color: #808080;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.not-found .content .login-btn {
+  width: 160px;
+  height: 47px;
+  background-color: #005D63;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.not-found .content .login-btn::after, .not-found .content .login-btn::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #D5B98B;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.not-found .content .login-btn::after {
+  left: 0;
+}
+
+.not-found .content .login-btn::before {
+  right: 0;
+}
+
+.not-found .content .login-btn:hover {
+  color: #005D63;
+}
+
+.not-found .content .login-btn:hover::after, .not-found .content .login-btn:hover::before {
+  width: 55%;
+}
+
 @media (max-width: 999px) {
   .login .form-contain, .modal-body.part-modal-body, .school-modal .modal-body.part-modal-body {
     padding: 50px 20px !important;
