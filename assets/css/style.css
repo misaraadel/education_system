@@ -3081,6 +3081,120 @@ button {
           animation: fadeInUp .3s linear;
 }
 
+.buttons-flex-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.buttons-flex-contain .add-data {
+  width: 149px;
+  height: 47px;
+  border: 1px solid #005D63;
+  background-color: #005D63;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.buttons-flex-contain .add-data.border-btn {
+  background-color: #fff !important;
+  color: #005D63;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+
+.buttons-flex-contain .add-data:nth-child(2) {
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+}
+
+.buttons-flex-contain .add-data::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #D5B98B;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  z-index: -1;
+}
+
+.buttons-flex-contain .add-data:hover {
+  color: #005D63;
+  border: 0px !important;
+}
+
+.buttons-flex-contain .add-data:hover::after {
+  width: 100%;
+}
+
+.buttons-flex-contain .circle-btn {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons-flex-contain .circle-btn img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.buttons-flex-contain .circle-btn.white {
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  margin: 0px 10px;
+}
+
+.buttons-flex-contain .circle-btn.gold {
+  background-color: #D5B98B;
+  border: 1px solid #D5B98B;
+}
+
+.buttons-flex-contain .circle-btn:hover img {
+  -webkit-animation: fadeInUp .3s linear;
+          animation: fadeInUp .3s linear;
+}
+
 .modal-content {
   border-radius: 10px !important;
   border: 0px !important;
