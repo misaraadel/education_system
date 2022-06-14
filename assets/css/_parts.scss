@@ -599,8 +599,6 @@
   }
 
   &:hover {
-    transform: translateY(-10px);
-
     h2 {
       color: #005D63;
     }
@@ -1452,6 +1450,48 @@
   }
 }
 
+.branch-box {
+  width: 100%;
+  padding: 22px 18px;
+  background-color: rgba($color: #D5B98B, $alpha: 0.10);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: all .4s linear;
+
+  .contain {
+    width: calc(100% - 60px);
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #909090;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+  }
+
+  .delete-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+    &:hover {
+      animation: tada .3s linear;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
 .active-filter {
   visibility: visible !important;
 
@@ -1461,5 +1501,25 @@
 
   .filter-contain {
     left: 0px !important;
+  }
+}
+
+.nav-screen {
+  width: 100%;
+  height: 160px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+footer {
+  img {
+    width: 100%;
+    height: 285px;
+    object-fit: fill;
+    object-position: center;
   }
 }
