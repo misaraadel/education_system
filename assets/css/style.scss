@@ -9,15 +9,15 @@
 
 .main-content {
   width: 100%;
-  min-height: 100vh;
   padding-top: 130px;
-  padding-bottom: 40px;
+  padding-bottom: 0px !important;
   padding-inline-start: 280px;
   background-color: #f6f6f6;
 
   &.full-contnent {
     padding-inline-start: 0px !important;
     padding-top: 80px !important;
+    min-height: unset !important;
   }
 
   &.active-main {

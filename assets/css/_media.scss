@@ -182,4 +182,17 @@
   .owl-carousel .owl-stage-outer {
     padding-bottom: 60px !important;
   }
+
+  .table-resposive {
+    table {
+      td, th {
+        padding-inline-start: 10px !important;
+        min-width: 150px !important;
+
+        &:last-child {
+          min-width: 68px !important;
+        }
+      }
+    }
+  }
 }

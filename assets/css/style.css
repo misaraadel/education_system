@@ -2923,9 +2923,8 @@ button {
 
 .main-content {
   width: 100%;
-  min-height: 100vh;
   padding-top: 130px;
-  padding-bottom: 40px;
+  padding-bottom: 0px !important;
   -webkit-padding-start: 280px;
           padding-inline-start: 280px;
   background-color: #f6f6f6;
@@ -2935,6 +2934,7 @@ button {
   -webkit-padding-start: 0px !important;
           padding-inline-start: 0px !important;
   padding-top: 80px !important;
+  min-height: unset !important;
 }
 
 .main-content.active-main {
@@ -3833,15 +3833,6 @@ button {
   color: #D5B98B;
 }
 
-.parts-box .form-contain .form-group .form-input.text-area {
-  height: 100px;
-}
-
-.parts-box .form-contain .form-group .form-input.text-area .form-control {
-  padding: 14px 15px !important;
-  border-radius: 15px !important;
-}
-
 .parts-box .form-contain .form-group .form-input .form-control {
   background-color: #fff;
   border: 1px solid rgba(0, 93, 99, 0.1);
@@ -3884,6 +3875,19 @@ button {
 
 .parts-box .form-contain .form-group .form-input .form-control:focus, .parts-box .form-contain .form-group .form-input .form-control:hover {
   background-color: rgba(0, 93, 99, 0.06);
+}
+
+.parts-box .form-contain .form-group .form-input.text-area {
+  height: 100px;
+}
+
+.parts-box .form-contain .form-group .form-input.text-area .form-control {
+  padding: 14px 15px !important;
+  border-radius: 15px !important;
+}
+
+.parts-box .form-contain .form-group .form-input.text-area .form-control:hover, .parts-box .form-contain .form-group .form-input.text-area .form-control:focus {
+  background-color: #fff !important;
 }
 
 .parts-box .form-contain .file-upload {
@@ -4095,6 +4099,23 @@ button {
   overflow: hidden;
   border: 0px !important;
   background: #fff url("../images/navbar/side_pattern.png") bottom right/cover no-repeat;
+  text-align: center;
+}
+
+.modal-body.part-modal-body img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+
+.modal-body.part-modal-body .low-margin {
+  margin: 24px 0px 40px !important;
+}
+
+.modal-body.part-modal-body .top-margin {
+  margin-top: 24px !important;
 }
 
 .modal-body.part-modal-body h1 {
@@ -4113,6 +4134,11 @@ button {
   text-align: center;
 }
 
+.modal-body.part-modal-body p span {
+  color: #005D63;
+  display: block !important;
+}
+
 .modal-body.part-modal-body .form-contain {
   width: 100%;
 }
@@ -4128,6 +4154,7 @@ button {
   margin-bottom: 15px;
   color: #000;
   font-size: 14px;
+  text-align: right !important;
   font-weight: 500;
 }
 
@@ -4213,6 +4240,10 @@ button {
   padding: 20px;
 }
 
+.modal-body.part-modal-body .form-contain .form-group .form-input.text-area .form-control:hover, .modal-body.part-modal-body .form-contain .form-group .form-input.text-area .form-control:focus {
+  background-color: #fff !important;
+}
+
 .modal-body.part-modal-body .form-contain .form-group .form-input .form-control {
   background-color: #fff;
   border: 1px solid rgba(0, 93, 99, 0.1);
@@ -4255,6 +4286,20 @@ button {
 
 .modal-body.part-modal-body .form-contain .form-group .form-input .form-control:focus, .modal-body.part-modal-body .form-contain .form-group .form-input .form-control:hover {
   background-color: rgba(0, 93, 99, 0.06);
+}
+
+.modal-body.part-modal-body .form-contain .form-group.text-area {
+  height: 100px;
+}
+
+.modal-body.part-modal-body .form-contain .form-group.text-area .form-control {
+  resize: none !important;
+  padding: 14px 15px !important;
+  border-radius: 15px !important;
+}
+
+.modal-body.part-modal-body .form-contain .form-group.text-area .form-control:hover, .modal-body.part-modal-body .form-contain .form-group.text-area .form-control:focus {
+  background-color: #fff !important;
 }
 
 .modal-body.part-modal-body .buttons-contain {
@@ -4356,6 +4401,7 @@ button {
 
 .modal-body.part-modal-body .buttons-contain .modal-btn.blue-border {
   border: 1px solid #005D63;
+  background-color: #fff;
   color: #005D63;
 }
 
@@ -4888,6 +4934,10 @@ button {
   padding: 20px;
 }
 
+.filter-modal .filter-contain .form-contain .form-group .form-input.text-area .form-control:hover, .filter-modal .filter-contain .form-contain .form-group .form-input.text-area .form-control:focus {
+  background-color: #fff !important;
+}
+
 .filter-modal .filter-contain .form-contain .form-group .form-input .form-control {
   background-color: #fff;
   border: 1px solid rgba(0, 93, 99, 0.1);
@@ -5145,6 +5195,117 @@ footer img {
      object-fit: fill;
   -o-object-position: center;
      object-position: center;
+}
+
+.table-resposive {
+  width: 100%;
+  overflow-x: scroll;
+  padding-bottom: 50px !important;
+}
+
+.table-resposive::-webkit-scrollbar-thumb, .table-resposive::-webkit-scrollbar-track, .table-resposive::-webkit-scrollbar-thumb:hover {
+  background: transparent !important;
+}
+
+.table-resposive table {
+  width: 100%;
+  padding: 0px 40px;
+  background-color: #fff;
+}
+
+.table-resposive table thead {
+  background-color: #D5B98B;
+}
+
+.table-resposive table thead tr th {
+  color: #005D63;
+  font-size: 16px;
+  font-weight: 700;
+  height: 80px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
+.table-resposive table tbody tr {
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.table-resposive table tbody tr td {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  height: 80px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
+.table-resposive table tbody tr td .choose-data img {
+  width: 10px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.table-resposive table tbody tr td .choose-data::after {
+  display: none;
+}
+
+.table-resposive table tbody tr td .dropdown-menu {
+  width: 193px;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 93, 99, 0.03);
+          box-shadow: 0px 0px 30px rgba(0, 93, 99, 0.03);
+  padding: 0px 20px;
+  border: 0px !important;
+}
+
+.table-resposive table tbody tr td .dropdown-menu .dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.table-resposive table tbody tr td .dropdown-menu .dropdown-item:last-child {
+  border-bottom: 0px !important;
+}
+
+.table-resposive table tbody tr td .dropdown-menu .dropdown-item img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.table-resposive table tbody tr td .dropdown-menu .dropdown-item span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.table-resposive table tbody tr td .dropdown-menu .dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+.table-resposive table tbody tr td .dropdown-menu .dropdown-item:hover img {
+  -webkit-animation: rotation .4s linear 3;
+          animation: rotation .4s linear 3;
+}
+
+.table-resposive table tbody tr td .dropdown-menu .dropdown-item:hover span {
+  color: #005D63;
 }
 
 /*home page*/
@@ -5466,6 +5627,14 @@ footer img {
   }
   .owl-carousel .owl-stage-outer {
     padding-bottom: 60px !important;
+  }
+  .table-resposive table td, .table-resposive table th {
+    -webkit-padding-start: 10px !important;
+            padding-inline-start: 10px !important;
+    min-width: 150px !important;
+  }
+  .table-resposive table td:last-child, .table-resposive table th:last-child {
+    min-width: 68px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
