@@ -2921,6 +2921,10 @@ button {
      object-fit: contain;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 .main-content {
   width: 100%;
   padding-top: 130px;
@@ -3692,6 +3696,11 @@ button {
   width: 100%;
   -webkit-padding-end: 150px;
           padding-inline-end: 150px;
+}
+
+.parts-box .form-contain.no-padding {
+  -webkit-padding-end: 0px !important;
+          padding-inline-end: 0px !important;
 }
 
 .parts-box .form-contain .form-group {
@@ -5325,6 +5334,18 @@ footer img {
 .table-resposive table .power-list {
   padding: 20px 0px 0px !important;
   width: 407px !important;
+}
+
+.edit-power-table {
+  padding-bottom: 0px !important;
+}
+
+.edit-power-table th, .edit-power-table td {
+  min-width: 100px !important;
+}
+
+.edit-power-table th .power-list, .edit-power-table td .power-list {
+  width: 100px !important;
 }
 
 /*home page*/
