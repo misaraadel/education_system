@@ -7,6 +7,10 @@
   box-shadow: 0px 0px 30px rgba($color: #005D63, $alpha: 0.03);
   transition: all .3s linear;
 
+  &.powers {
+    padding: 20px 15px !important;
+  }
+
   .flex-data {
     width: 100%;
     display: flex;
@@ -164,48 +168,6 @@
     font-weight: 500;
     border-radius: 20px;
     width: fit-content;
-  }
-
-  .power-list {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-    li {
-      padding-inline-start: 30px;
-      position: relative;
-      color: #000000;
-      font-size: 14px;
-      font-weight: 500;
-      margin-inline-end: 12px;
-      margin-block-end: 20px;
-      z-index: 9;
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: url('../images/parts/tick_circle.svg') center / contain no-repeat;
-        top: calc(50% - 10px);
-        right: 0px;
-        z-index: -1;
-      }
-    }
-
-    .wrapper {
-      margin-inline-end: 25px !important;
-      margin-block-end: 28px;
-
-      label {
-        color: #000000;
-        font-size: 14px;
-        font-weight: 500;
-      }
-    }
   }
 
   .nav {
@@ -605,6 +567,58 @@
   &:hover {
     h2 {
       color: #005D63;
+    }
+  }
+}
+
+.power-table {
+  th, td {
+    min-width: 200px !important;
+
+    &.choose {
+      min-width: 100px !important;
+    }
+  }
+}
+
+.power-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  li {
+    padding-inline-start: 30px;
+    position: relative;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-inline-end: 12px;
+    margin-block-end: 20px;
+    z-index: 9;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('../images/parts/tick_circle.svg') center / contain no-repeat;
+      top: calc(50% - 10px);
+      right: 0px;
+      z-index: -1;
+    }
+  }
+
+  .wrapper {
+    margin-inline-end: 25px !important;
+    margin-block-end: 28px;
+
+    label {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
     }
   }
 }
@@ -1589,6 +1603,8 @@ footer {
     width: 100%;
     padding: 0px 40px;
     background-color: #fff;
+    border-radius: 20px !important;
+    overflow: hidden;
 
     thead {
       background-color: #D5B98B;
@@ -1678,6 +1694,11 @@ footer {
           }
         }
       }
+    }
+
+    .power-list {
+      padding: 20px 0px 0px !important;
+      width: 407px !important;
     }
   }
 }

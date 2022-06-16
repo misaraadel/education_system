@@ -3291,6 +3291,10 @@ button {
   transition: all .3s linear;
 }
 
+.parts-box.powers {
+  padding: 20px 15px !important;
+}
+
 .parts-box .flex-data {
   width: 100%;
   display: -webkit-box;
@@ -3488,61 +3492,6 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.parts-box .power-list {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.parts-box .power-list li {
-  -webkit-padding-start: 30px;
-          padding-inline-start: 30px;
-  position: relative;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 500;
-  -webkit-margin-end: 12px;
-          margin-inline-end: 12px;
-  -webkit-margin-after: 20px;
-          margin-block-end: 20px;
-  z-index: 9;
-}
-
-.parts-box .power-list li::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: url("../images/parts/tick_circle.svg") center/contain no-repeat;
-  top: calc(50% - 10px);
-  right: 0px;
-  z-index: -1;
-}
-
-.parts-box .power-list .wrapper {
-  -webkit-margin-end: 25px !important;
-          margin-inline-end: 25px !important;
-  -webkit-margin-after: 28px;
-          margin-block-end: 28px;
-}
-
-.parts-box .power-list .wrapper label {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 500;
 }
 
 .parts-box .nav {
@@ -4034,6 +3983,69 @@ button {
 
 .parts-box:hover h2 {
   color: #005D63;
+}
+
+.power-table th, .power-table td {
+  min-width: 200px !important;
+}
+
+.power-table th.choose, .power-table td.choose {
+  min-width: 100px !important;
+}
+
+.power-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.power-list li {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  position: relative;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-margin-end: 12px;
+          margin-inline-end: 12px;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  z-index: 9;
+}
+
+.power-list li::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../images/parts/tick_circle.svg") center/contain no-repeat;
+  top: calc(50% - 10px);
+  right: 0px;
+  z-index: -1;
+}
+
+.power-list .wrapper {
+  -webkit-margin-end: 25px !important;
+          margin-inline-end: 25px !important;
+  -webkit-margin-after: 28px;
+          margin-block-end: 28px;
+}
+
+.power-list .wrapper label {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .numbers {
@@ -5211,6 +5223,8 @@ footer img {
   width: 100%;
   padding: 0px 40px;
   background-color: #fff;
+  border-radius: 20px !important;
+  overflow: hidden;
 }
 
 .table-resposive table thead {
@@ -5306,6 +5320,11 @@ footer img {
 
 .table-resposive table tbody tr td .dropdown-menu .dropdown-item:hover span {
   color: #005D63;
+}
+
+.table-resposive table .power-list {
+  padding: 20px 0px 0px !important;
+  width: 407px !important;
 }
 
 /*home page*/
