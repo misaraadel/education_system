@@ -1660,6 +1660,9 @@ button {
   -ms-flex-line-pack: center;
       align-content: center;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .login .form-contain .wrapper .radio-check {
@@ -1680,8 +1683,8 @@ button {
 
 .login .form-contain .wrapper .radio-check::after {
   content: '\f00c';
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
   background-color: #D5B98B;
   border-radius: 50%;
   color: #fff;
@@ -1704,8 +1707,8 @@ button {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 11px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all .4s linear;
@@ -3692,23 +3695,31 @@ body {
           animation: tada .4s linear both;
 }
 
-.parts-box .form-contain {
+.parts-box:hover h2 {
+  color: #005D63;
+}
+
+.form-contain {
   width: 100%;
   -webkit-padding-end: 150px;
           padding-inline-end: 150px;
 }
 
-.parts-box .form-contain.no-padding {
+.form-contain .table-resposive {
+  padding-bottom: 0px !important;
+}
+
+.form-contain.no-padding {
   -webkit-padding-end: 0px !important;
           padding-inline-end: 0px !important;
 }
 
-.parts-box .form-contain .form-group {
+.form-contain .form-group {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.parts-box .form-contain .form-group label {
+.form-contain .form-group label {
   width: 100%;
   display: block;
   margin-bottom: 15px;
@@ -3717,17 +3728,17 @@ body {
   font-weight: 500;
 }
 
-.parts-box .form-contain .form-group .form-input {
+.form-contain .form-group .form-input {
   width: 100%;
   height: 47px;
 }
 
-.parts-box .form-contain .form-group .form-input.select-input {
+.form-contain .form-group .form-input.select-input {
   position: relative;
   z-index: 9;
 }
 
-.parts-box .form-contain .form-group .form-input.select-input::after {
+.form-contain .form-group .form-input.select-input::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -3738,12 +3749,12 @@ body {
   z-index: 0;
 }
 
-.parts-box .form-contain .form-group .form-input.history {
+.form-contain .form-group .form-input.history {
   position: relative;
   z-index: 9;
 }
 
-.parts-box .form-contain .form-group .form-input.history::before {
+.form-contain .form-group .form-input.history::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -3754,12 +3765,12 @@ body {
   z-index: 0;
 }
 
-.parts-box .form-contain .form-group .form-input.history .form-control {
+.form-contain .form-group .form-input.history .form-control {
   color: #909090 !important;
   text-align: right !important;
 }
 
-.parts-box .form-contain .form-group .form-input.history input[type="date"]::-webkit-calendar-picker-indicator {
+.form-contain .form-group .form-input.history input[type="date"]::-webkit-calendar-picker-indicator {
   background: transparent;
   bottom: 0;
   color: transparent;
@@ -3772,11 +3783,11 @@ body {
   width: auto;
 }
 
-.parts-box .form-contain .form-group .form-input.show_hide_password {
+.form-contain .form-group .form-input.show_hide_password {
   position: relative;
 }
 
-.parts-box .form-contain .form-group .form-input.show_hide_password .show_pass {
+.form-contain .form-group .form-input.show_hide_password .show_pass {
   font-size: 18px;
   color: #909090;
   position: absolute;
@@ -3787,11 +3798,11 @@ body {
   cursor: pointer;
 }
 
-.parts-box .form-contain .form-group .form-input.show_hide_password .show_pass:hover {
+.form-contain .form-group .form-input.show_hide_password .show_pass:hover {
   color: #D5B98B;
 }
 
-.parts-box .form-contain .form-group .form-input .form-control {
+.form-contain .form-group .form-input .form-control {
   background-color: #fff;
   border: 1px solid rgba(0, 93, 99, 0.1);
   padding: 0px 20px;
@@ -3807,57 +3818,57 @@ body {
   resize: none;
 }
 
-.parts-box .form-contain .form-group .form-input .form-control::-webkit-input-placeholder {
+.form-contain .form-group .form-input .form-control::-webkit-input-placeholder {
   color: #909090;
   font-size: 16px;
   font-weight: 500;
 }
 
-.parts-box .form-contain .form-group .form-input .form-control:-ms-input-placeholder {
+.form-contain .form-group .form-input .form-control:-ms-input-placeholder {
   color: #909090;
   font-size: 16px;
   font-weight: 500;
 }
 
-.parts-box .form-contain .form-group .form-input .form-control::-ms-input-placeholder {
+.form-contain .form-group .form-input .form-control::-ms-input-placeholder {
   color: #909090;
   font-size: 16px;
   font-weight: 500;
 }
 
-.parts-box .form-contain .form-group .form-input .form-control::placeholder {
+.form-contain .form-group .form-input .form-control::placeholder {
   color: #909090;
   font-size: 16px;
   font-weight: 500;
 }
 
-.parts-box .form-contain .form-group .form-input .form-control:focus, .parts-box .form-contain .form-group .form-input .form-control:hover {
+.form-contain .form-group .form-input .form-control:focus, .form-contain .form-group .form-input .form-control:hover {
   background-color: rgba(0, 93, 99, 0.06);
 }
 
-.parts-box .form-contain .form-group .form-input.text-area {
+.form-contain .form-group .form-input.text-area {
   height: 100px;
 }
 
-.parts-box .form-contain .form-group .form-input.text-area .form-control {
+.form-contain .form-group .form-input.text-area .form-control {
   padding: 14px 15px !important;
   border-radius: 15px !important;
 }
 
-.parts-box .form-contain .form-group .form-input.text-area .form-control:hover, .parts-box .form-contain .form-group .form-input.text-area .form-control:focus {
+.form-contain .form-group .form-input.text-area .form-control:hover, .form-contain .form-group .form-input.text-area .form-control:focus {
   background-color: #fff !important;
 }
 
-.parts-box .form-contain .file-upload {
+.form-contain .file-upload {
   width: 224px;
   height: 150px;
 }
 
-.parts-box .form-contain .file-upload input[type="file"] {
+.form-contain .file-upload input[type="file"] {
   display: none;
 }
 
-.parts-box .form-contain .file-upload .file-upload-section {
+.form-contain .file-upload .file-upload-section {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -3882,7 +3893,7 @@ body {
   cursor: pointer;
 }
 
-.parts-box .form-contain .file-upload .file-upload-section img {
+.form-contain .file-upload .file-upload-section img {
   width: 40px;
   height: 40px;
   -o-object-fit: contain;
@@ -3891,26 +3902,26 @@ body {
   transition: all .3s linear;
 }
 
-.parts-box .form-contain .file-upload .file-upload-section h2 {
+.form-contain .file-upload .file-upload-section h2 {
   color: #909090;
   font-size: 16px;
   font-weight: 500;
   margin: 15px 0px;
 }
 
-.parts-box .form-contain .file-upload .file-upload-section p {
+.form-contain .file-upload .file-upload-section p {
   color: #D5B98B;
   font-size: 11px;
   font-weight: 500;
   margin: 0px;
 }
 
-.parts-box .form-contain .file-upload .file-upload-section:hover img {
+.form-contain .file-upload .file-upload-section:hover img {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-.parts-box .form-contain .wrapper {
+.form-contain .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3922,7 +3933,12 @@ body {
   cursor: pointer;
 }
 
-.parts-box .form-contain .wrapper .radio-check {
+.form-contain .wrapper .radio-title {
+  margin: 0px !important;
+  width: calc(100% - 25px);
+}
+
+.form-contain .wrapper .radio-check {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -3938,10 +3954,18 @@ body {
           margin-inline-end: 10px;
 }
 
-.parts-box .form-contain .wrapper .radio-check::after {
+.form-contain .wrapper .radio-check.squre-check {
+  border-radius: 4px !important;
+}
+
+.form-contain .wrapper .radio-check.squre-check::after {
+  border-radius: 4px !important;
+}
+
+.form-contain .wrapper .radio-check::after {
   content: '\f00c';
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
   background-color: #D5B98B;
   border-radius: 50%;
   color: #fff;
@@ -3974,23 +3998,23 @@ body {
   left: 0;
 }
 
-.parts-box .form-contain .wrapper .radio-check:checked::after {
+.form-contain .wrapper .radio-check:checked {
+  border: 0px !important;
+}
+
+.form-contain .wrapper .radio-check:checked::after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.parts-box .form-contain .wrapper .radio-title {
+.form-contain .wrapper .radio-title {
   color: #000;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
 
-.parts-box .form-contain .wrapper:hover .radio-title {
-  color: #005D63;
-}
-
-.parts-box:hover h2 {
+.form-contain .wrapper:hover .radio-title {
   color: #005D63;
 }
 
@@ -5346,6 +5370,30 @@ footer img {
 
 .edit-power-table th .power-list, .edit-power-table td .power-list {
   width: 100px !important;
+}
+
+.radio-data-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-data-select .wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-margin-end: 15px !important;
+          margin-inline-end: 15px !important;
+}
+
+.radio-data-select .wrapper label {
+  margin: 0px !important;
+  display: block;
+  width: calc(100% - 25px) !important;
 }
 
 /*home page*/
