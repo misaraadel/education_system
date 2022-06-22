@@ -5552,6 +5552,174 @@ footer img {
   width: 55%;
 }
 
+/*print page*/
+.print-page {
+  width: 100%;
+  padding: 100px 0px 160px 0px;
+  background: url("../images/print/print.jpg") center/100% 100% no-repeat;
+}
+
+.print-page .logo {
+  width: 200px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.print-page .contain {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.print-page .contain img {
+  width: 100px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.print-page .data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.print-page .data .flex-data {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.print-page .data .flex-data:last-child {
+  margin: 0px !important;
+}
+
+.print-page .data .flex-data h1 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 0px;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  width: 106px;
+  text-align: start;
+}
+
+.print-page .data .flex-data p {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  width: 98px;
+  text-align: start;
+}
+
+.print-page .center-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 30px 0px 50px;
+}
+
+.print-page .center-data h1 {
+  color: #005D63;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.print-page .center-data h2 {
+  color: #D5B98B;
+  font-size: 34px;
+  font-weight: 900;
+  margin-top: 120px;
+}
+
+.print-page .desc {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.print-page .desc b {
+  font-weight: 900;
+  margin: 0px 20px;
+  display: inline-block;
+}
+
+.print-page .head {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 30px;
+  -webkit-padding-start: 50px;
+          padding-inline-start: 50px;
+}
+
+.print-page .end-data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.print-page .end-data h1 {
+  color: #005D63;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.print-page .end-data h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 999px) {
   .login .form-contain, .modal-body.part-modal-body, .school-modal .modal-body.part-modal-body {
     padding: 50px 20px !important;
