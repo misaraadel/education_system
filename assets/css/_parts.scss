@@ -1738,6 +1738,14 @@ footer {
   }
 }
 
+td .form-contain {
+  width: 200px !important;
+
+  .form-control {
+    text-align: center;
+  }
+}
+
 .radio-data-select {
   display: flex;
   height: 100%;

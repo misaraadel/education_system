@@ -5372,6 +5372,14 @@ footer img {
   width: 100px !important;
 }
 
+td .form-contain {
+  width: 200px !important;
+}
+
+td .form-contain .form-control {
+  text-align: center;
+}
+
 .radio-data-select {
   display: -webkit-box;
   display: -ms-flexbox;
