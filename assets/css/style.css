@@ -4186,6 +4186,7 @@ body {
 
 .modal-body.part-modal-body .form-contain {
   width: 100%;
+  padding: 0px !important;
 }
 
 .modal-body.part-modal-body .form-contain .form-group {
@@ -4709,7 +4710,6 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 60%;
 }
 
 .modal-body.part-modal-body .data-branch-manager li .data img {
