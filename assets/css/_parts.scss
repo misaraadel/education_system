@@ -1762,3 +1762,90 @@ td .form-contain {
     }
   }
 }
+
+.accordion {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+
+  .card {
+    background-color: transparent !important;
+    border: 0px !important;
+
+    .card-header {
+      background-color: transparent;
+      width: 100%;
+      border-bottom: 1px solid rgba($color: #D5B98B, $alpha: 0.4);
+      margin-bottom: 0px !important;
+
+      h2 {
+        width: 100%;
+      }
+
+      .btn.btn-link {
+        text-decoration: none;
+        width: 100%;
+        position: relative;
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        z-index: 9;
+        text-align: unset !important;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background: url("../images/navbar/arrow_down.svg") center/contain no-repeat;
+          top: calc(50% - 12px);
+          left: 20px;
+          z-index: -1;
+          transition: all .3s linear;
+        }
+
+        &:hover, &:focus {
+          text-decoration: none;
+          color: #005D63;
+        }
+
+        &[aria-expanded="true"] {
+          color: #005D63;
+
+          &::after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      .card-header {
+        margin-bottom: -1px !important;
+      } 
+    }
+  }
+
+  .table-resposive {
+    border: 1px solid rgba($color: #E5E5E5, $alpha: 0.5);
+    border-radius: 20px;
+    padding-bottom: 20px !important;
+
+    table {
+      padding: 0px 20px;
+
+      th, td {
+        text-align: center !important;
+      }
+
+      tbody {
+        tr {
+          &:last-child {
+            border-bottom: 0px !important;
+          }
+        }
+      }
+    }
+  }
+}

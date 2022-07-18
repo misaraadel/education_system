@@ -2931,7 +2931,7 @@ body {
 .main-content {
   width: 100%;
   padding-top: 130px;
-  padding-bottom: 0px !important;
+  padding-bottom: 40px !important;
   -webkit-padding-start: 280px;
           padding-inline-start: 280px;
   background-color: #f6f6f6;
@@ -5402,6 +5402,89 @@ td .form-contain .form-control {
   margin: 0px !important;
   display: block;
   width: calc(100% - 25px) !important;
+}
+
+.accordion {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.accordion .card {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+.accordion .card .card-header {
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid rgba(213, 185, 139, 0.4);
+  margin-bottom: 0px !important;
+}
+
+.accordion .card .card-header h2 {
+  width: 100%;
+}
+
+.accordion .card .card-header .btn.btn-link {
+  text-decoration: none;
+  width: 100%;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  z-index: 9;
+  text-align: unset !important;
+}
+
+.accordion .card .card-header .btn.btn-link::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../images/navbar/arrow_down.svg") center/contain no-repeat;
+  top: calc(50% - 12px);
+  left: 20px;
+  z-index: -1;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.accordion .card .card-header .btn.btn-link:hover, .accordion .card .card-header .btn.btn-link:focus {
+  text-decoration: none;
+  color: #005D63;
+}
+
+.accordion .card .card-header .btn.btn-link[aria-expanded="true"] {
+  color: #005D63;
+}
+
+.accordion .card .card-header .btn.btn-link[aria-expanded="true"]::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion .card:last-child .card-header {
+  margin-bottom: -1px !important;
+}
+
+.accordion .table-resposive {
+  border: 1px solid rgba(229, 229, 229, 0.5);
+  border-radius: 20px;
+  padding-bottom: 20px !important;
+}
+
+.accordion .table-resposive table {
+  padding: 0px 20px;
+}
+
+.accordion .table-resposive table th, .accordion .table-resposive table td {
+  text-align: center !important;
+}
+
+.accordion .table-resposive table tbody tr:last-child {
+  border-bottom: 0px !important;
 }
 
 /*home page*/
