@@ -642,7 +642,23 @@
       color: #000000;
       font-size: 14px;
       font-weight: 500;
+      margin: 0px !important;
     }
+  }
+}
+
+.power-data {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  label {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px !important;
+    margin-inline-end: 10px !important;
+    display: inline-block;
   }
 }
 
